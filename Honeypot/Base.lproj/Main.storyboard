@@ -18,27 +18,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bitcoin Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SPM-UN-axC">
+                                <rect key="frame" x="26" y="321" width="548" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Honeypot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAY-lE-bP3">
                                 <rect key="frame" x="159" y="221" width="283" height="79"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="66"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bitcoin Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SPM-UN-axC">
-                                <rect key="frame" x="26" y="321" width="548" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1Y-rc-FHj">
+                                <rect key="frame" x="508" y="546" width="76" height="34"/>
+                                <state key="normal" title="BeeTraps"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.10980392160000001" green="0.41960784309999999" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="VAY-lE-bP3" secondAttribute="centerX" constant="-0.5" id="04K-9q-eQV"/>
                             <constraint firstItem="SPM-UN-axC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="NMI-ws-Sgd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SPM-UN-axC" secondAttribute="trailing" constant="10" id="Xqf-Bu-jNl"/>
+                            <constraint firstItem="w1Y-rc-FHj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ecb-RR-XBF"/>
                             <constraint firstAttribute="centerY" secondItem="VAY-lE-bP3" secondAttribute="bottom" constant="0.5" id="fWd-MC-etv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="w1Y-rc-FHj" secondAttribute="bottom" constant="20" id="tHz-Al-OHp"/>
                             <constraint firstItem="SPM-UN-axC" firstAttribute="top" secondItem="VAY-lE-bP3" secondAttribute="bottom" constant="21" id="yL9-9r-Mka"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="SPM-UN-axC" id="qPG-D1-6QZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

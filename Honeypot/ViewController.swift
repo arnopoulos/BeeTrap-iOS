@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 	
-	@IBOutlet var addressLabel:UILabel?
+	@IBOutlet var addressLabel:UITextField!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
