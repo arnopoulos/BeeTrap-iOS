@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49340BD21A16FE3A00718954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49340BD11A16FE3A00718954 /* AppDelegate.swift */; };
+		49340BD51A16FE3A00718954 /* Honeypot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49340BD31A16FE3A00718954 /* Honeypot.xcdatamodeld */; };
+		49340BD71A16FE3A00718954 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49340BD61A16FE3A00718954 /* ViewController.swift */; };
+		49340BDA1A16FE3A00718954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49340BD81A16FE3A00718954 /* Main.storyboard */; };
+		49340BDC1A16FE3A00718954 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49340BDB1A16FE3A00718954 /* Images.xcassets */; };
+		49340BDF1A16FE3A00718954 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49340BDD1A16FE3A00718954 /* LaunchScreen.xib */; };
+		49340BEB1A16FE3A00718954 /* HoneypotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49340BEA1A16FE3A00718954 /* HoneypotTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49340BE51A16FE3A00718954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49340BC41A16FE3A00718954 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49340BCB1A16FE3A00718954;
+			remoteInfo = Honeypot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49340BCC1A16FE3A00718954 /* Honeypot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honeypot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49340BD01A16FE3A00718954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49340BD11A16FE3A00718954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49340BD41A16FE3A00718954 /* Honeypot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Honeypot.xcdatamodel; sourceTree = "<group>"; };
+		49340BD61A16FE3A00718954 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49340BD91A16FE3A00718954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49340BDB1A16FE3A00718954 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		49340BDE1A16FE3A00718954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		49340BE41A16FE3A00718954 /* HoneypotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoneypotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49340BE91A16FE3A00718954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49340BEA1A16FE3A00718954 /* HoneypotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneypotTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49340BC91A16FE3A00718954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49340BE11A16FE3A00718954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49340BC31A16FE3A00718954 = {
+			isa = PBXGroup;
+			children = (
+				49340BCE1A16FE3A00718954 /* Honeypot */,
+				49340BE71A16FE3A00718954 /* HoneypotTests */,
+				49340BCD1A16FE3A00718954 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49340BCD1A16FE3A00718954 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49340BCC1A16FE3A00718954 /* Honeypot.app */,
+				49340BE41A16FE3A00718954 /* HoneypotTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49340BCE1A16FE3A00718954 /* Honeypot */ = {
+			isa = PBXGroup;
+			children = (
+				49340BD11A16FE3A00718954 /* AppDelegate.swift */,
+				49340BD61A16FE3A00718954 /* ViewController.swift */,
+				49340BD81A16FE3A00718954 /* Main.storyboard */,
+				49340BDB1A16FE3A00718954 /* Images.xcassets */,
+				49340BDD1A16FE3A00718954 /* LaunchScreen.xib */,
+				49340BD31A16FE3A00718954 /* Honeypot.xcdatamodeld */,
+				49340BCF1A16FE3A00718954 /* Supporting Files */,
+			);
+			path = Honeypot;
+			sourceTree = "<group>";
+		};
+		49340BCF1A16FE3A00718954 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49340BD01A16FE3A00718954 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49340BE71A16FE3A00718954 /* HoneypotTests */ = {
+			isa = PBXGroup;
+			children = (
+				49340BEA1A16FE3A00718954 /* HoneypotTests.swift */,
+				49340BE81A16FE3A00718954 /* Supporting Files */,
+			);
+			path = HoneypotTests;
+			sourceTree = "<group>";
+		};
+		49340BE81A16FE3A00718954 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49340BE91A16FE3A00718954 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49340BCB1A16FE3A00718954 /* Honeypot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49340BEE1A16FE3A00718954 /* Build configuration list for PBXNativeTarget "Honeypot" */;
+			buildPhases = (
+				49340BC81A16FE3A00718954 /* Sources */,
+				49340BC91A16FE3A00718954 /* Frameworks */,
+				49340BCA1A16FE3A00718954 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Honeypot;
+			productName = Honeypot;
+			productReference = 49340BCC1A16FE3A00718954 /* Honeypot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49340BE31A16FE3A00718954 /* HoneypotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49340BF11A16FE3A00718954 /* Build configuration list for PBXNativeTarget "HoneypotTests" */;
+			buildPhases = (
+				49340BE01A16FE3A00718954 /* Sources */,
+				49340BE11A16FE3A00718954 /* Frameworks */,
+				49340BE21A16FE3A00718954 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49340BE61A16FE3A00718954 /* PBXTargetDependency */,
+			);
+			name = HoneypotTests;
+			productName = HoneypotTests;
+			productReference = 49340BE41A16FE3A00718954 /* HoneypotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49340BC41A16FE3A00718954 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Andrew Arnopoulos";
+				TargetAttributes = {
+					49340BCB1A16FE3A00718954 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					49340BE31A16FE3A00718954 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 49340BCB1A16FE3A00718954;
+					};
+				};
+			};
+			buildConfigurationList = 49340BC71A16FE3A00718954 /* Build configuration list for PBXProject "Honeypot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49340BC31A16FE3A00718954;
+			productRefGroup = 49340BCD1A16FE3A00718954 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49340BCB1A16FE3A00718954 /* Honeypot */,
+				49340BE31A16FE3A00718954 /* HoneypotTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49340BCA1A16FE3A00718954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49340BDA1A16FE3A00718954 /* Main.storyboard in Resources */,
+				49340BDF1A16FE3A00718954 /* LaunchScreen.xib in Resources */,
+				49340BDC1A16FE3A00718954 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49340BE21A16FE3A00718954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49340BC81A16FE3A00718954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49340BD71A16FE3A00718954 /* ViewController.swift in Sources */,
+				49340BD21A16FE3A00718954 /* AppDelegate.swift in Sources */,
+				49340BD51A16FE3A00718954 /* Honeypot.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49340BE01A16FE3A00718954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49340BEB1A16FE3A00718954 /* HoneypotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49340BE61A16FE3A00718954 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49340BCB1A16FE3A00718954 /* Honeypot */;
+			targetProxy = 49340BE51A16FE3A00718954 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49340BD81A16FE3A00718954 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49340BD91A16FE3A00718954 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49340BDD1A16FE3A00718954 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49340BDE1A16FE3A00718954 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49340BEC1A16FE3A00718954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49340BED1A16FE3A00718954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49340BEF1A16FE3A00718954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Honeypot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49340BF01A16FE3A00718954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Honeypot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		49340BF21A16FE3A00718954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HoneypotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Honeypot.app/Honeypot";
+			};
+			name = Debug;
+		};
+		49340BF31A16FE3A00718954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HoneypotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Honeypot.app/Honeypot";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49340BC71A16FE3A00718954 /* Build configuration list for PBXProject "Honeypot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49340BEC1A16FE3A00718954 /* Debug */,
+				49340BED1A16FE3A00718954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49340BEE1A16FE3A00718954 /* Build configuration list for PBXNativeTarget "Honeypot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49340BEF1A16FE3A00718954 /* Debug */,
+				49340BF01A16FE3A00718954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49340BF11A16FE3A00718954 /* Build configuration list for PBXNativeTarget "HoneypotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49340BF21A16FE3A00718954 /* Debug */,
+				49340BF31A16FE3A00718954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		49340BD31A16FE3A00718954 /* Honeypot.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				49340BD41A16FE3A00718954 /* Honeypot.xcdatamodel */,
+			);
+			currentVersion = 49340BD41A16FE3A00718954 /* Honeypot.xcdatamodel */;
+			path = Honeypot.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 49340BC41A16FE3A00718954 /* Project object */;
+}
