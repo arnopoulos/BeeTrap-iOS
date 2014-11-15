@@ -15,6 +15,7 @@
 @interface Wallet : NSObject 
 
 @property SKSpriteNode *sprite;
+@property double starty;
 
 @property NSString *name;
 @property NSString* ID;
