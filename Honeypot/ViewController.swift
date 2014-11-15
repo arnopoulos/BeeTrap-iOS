@@ -16,29 +16,44 @@ class ViewController: UIViewController, UITextFieldDelegate {
 		}
 	}
 	
+	@IBOutlet var activityMonitor:UIActivityIndicatorView! {
+		didSet {
+			activityMonitor.hidesWhenStopped = true
+		}
+	}
+	
 	lazy var data = NSMutableData()
+	
+	@IBAction func resignKeyboardTapGesture(tapGesture:UITapGestureRecognizer) {
+		if addressLabel.isFirstResponder() {
+			addressLabel.resignFirstResponder()
+		}
+	}
 
 	func textFieldShouldReturn(textField: UITextField) -> Bool {
 		textField.resignFirstResponder()
-		textField.text = "";
 		return true
 	}
 
 	func textFieldDidEndEditing(textField: UITextField) {
-		startValidation(addressLabel.text)
+		if !addressLabel.text.isEmpty {
+			validateAddress(addressLabel.text)
+		}
 	}
 	
-	func startValidation(address:String) {
+	func validateAddress(address:String) {
 		
 		let htmlTag = "?address=" + address
 		
-		let addressString = "https://bee-trap.herokuapp.com/users/2/wallet.json" + htmlTag
-//		let addressString = "http://www.arnopoulos.io/test"
-		println(addressString)
+//		let addressString = "https://bee-trap.herokuapp.com/users/2/wallet.json" + htmlTag
+		let addressString = "http://www.arnopoulos.io/test"
 		let url = NSURL(string: addressString)
 		let request  = NSMutableURLRequest()
 		request.URL = url
 		request.HTTPMethod = "GET"
+		
+		activityMonitor.startAnimating()
+		
 		
 		NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
 			if error == nil {
@@ -46,7 +61,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
 				let jsonResult = NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers, error: err) as? NSDictionary
 				
 				if let jsonResult = jsonResult {
-					println(jsonResult)
+					//Check JSON for success
+					var success = false
+					
+					
+					if success {
+						//Reset addressLabel text
+						self.addressLabel.text = "";
+					}
 				} else {
 					println("Cannot parse json.")
 					println(err)
@@ -55,6 +77,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
 			} else {
 				println(error)
 			}
+			
+			self.activityMonitor.stopAnimating()
 		}
 		
 		

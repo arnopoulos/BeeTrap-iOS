@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,16 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bitcoin Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SPM-UN-axC">
-                                <rect key="frame" x="26" y="321" width="548" height="30"/>
+                                <rect key="frame" x="181" y="195" width="239" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Honeypot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAY-lE-bP3">
-                                <rect key="frame" x="159" y="221" width="283" height="79"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="66"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1Y-rc-FHj">
                                 <rect key="frame" x="508" y="546" width="76" height="34"/>
                                 <state key="normal" title="BeeTraps"/>
@@ -36,23 +29,44 @@
                                     <segue destination="qIx-Mo-I6f" kind="show" id="Kcy-YC-Gqg"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="fSI-wt-bmD">
+                                <rect key="frame" x="290" y="233" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BeeTrap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAY-lE-bP3">
+                                <rect key="frame" x="181" y="95" width="239" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="66"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.10980392160000001" green="0.41960784309999999" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="VAY-lE-bP3" secondAttribute="centerX" constant="-0.5" id="04K-9q-eQV"/>
-                            <constraint firstItem="SPM-UN-axC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="NMI-ws-Sgd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SPM-UN-axC" secondAttribute="trailing" constant="10" id="Xqf-Bu-jNl"/>
-                            <constraint firstItem="w1Y-rc-FHj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ecb-RR-XBF"/>
-                            <constraint firstAttribute="centerY" secondItem="VAY-lE-bP3" secondAttribute="bottom" constant="0.5" id="fWd-MC-etv"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="w1Y-rc-FHj" secondAttribute="bottom" constant="20" id="tHz-Al-OHp"/>
+                            <constraint firstItem="fSI-wt-bmD" firstAttribute="top" secondItem="SPM-UN-axC" secondAttribute="bottom" constant="8" id="4CP-4t-KZs"/>
+                            <constraint firstItem="SPM-UN-axC" firstAttribute="centerX" secondItem="fSI-wt-bmD" secondAttribute="centerX" id="57o-tg-0QA"/>
+                            <constraint firstItem="SPM-UN-axC" firstAttribute="width" secondItem="VAY-lE-bP3" secondAttribute="width" id="QUK-bu-46E"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="w1Y-rc-FHj" secondAttribute="bottom" constant="20" id="S84-tI-jW5"/>
+                            <constraint firstItem="SPM-UN-axC" firstAttribute="centerX" secondItem="VAY-lE-bP3" secondAttribute="centerX" id="U0u-Tf-2Jz"/>
+                            <constraint firstItem="VAY-lE-bP3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="c9x-6X-UNU"/>
+                            <constraint firstItem="w1Y-rc-FHj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="v8b-2K-G7z"/>
                             <constraint firstItem="SPM-UN-axC" firstAttribute="top" secondItem="VAY-lE-bP3" secondAttribute="bottom" constant="21" id="yL9-9r-Mka"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="VoW-ta-DK5" appends="YES" id="55T-k0-eO8"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="activityMonitor" destination="fSI-wt-bmD" id="vKF-Bx-7qC"/>
                         <outlet property="addressLabel" destination="SPM-UN-axC" id="qPG-D1-6QZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="VoW-ta-DK5">
+                    <connections>
+                        <action selector="resignKeyboardTapGesture:" destination="BYZ-38-t0r" id="fTA-MC-3ZA"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
         <!--Navigation Controller-->
@@ -69,7 +83,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zdu-5q-JDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="854" y="136"/>
+            <point key="canvasLocation" x="1442" y="998"/>
         </scene>
         <!--Wallet List View Controller-->
         <scene sceneID="oBB-VB-kHy">
@@ -88,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jp5-f4-0iz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1553" y="136"/>
+            <point key="canvasLocation" x="2141" y="998"/>
         </scene>
     </scenes>
 </document>
