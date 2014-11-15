@@ -33,7 +33,7 @@
                                 <rect key="frame" x="508" y="546" width="76" height="34"/>
                                 <state key="normal" title="BeeTraps"/>
                                 <connections>
-                                    <segue destination="D9Q-Va-spQ" kind="show" id="pcK-xy-296"/>
+                                    <segue destination="qIx-Mo-I6f" kind="show" id="Kcy-YC-Gqg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -55,39 +55,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Table Table View Controller-->
-        <scene sceneID="V2A-oP-IdE">
+        <!--Navigation Controller-->
+        <scene sceneID="f4F-Zv-NF1">
             <objects>
-                <tableViewController id="D9Q-Va-spQ" customClass="TableTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iyE-AU-NjC">
+                <navigationController id="qIx-Mo-I6f" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cCH-c8-Lvo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="umu-s8-QkJ" kind="relationship" relationship="rootViewController" id="RUf-Nx-APX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zdu-5q-JDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="136"/>
+        </scene>
+        <!--Wallet List View Controller-->
+        <scene sceneID="oBB-VB-kHy">
+            <objects>
+                <viewController id="umu-s8-QkJ" customClass="WalletListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EOz-dw-sfr"/>
+                        <viewControllerLayoutGuide type="bottom" id="f7a-be-ZGj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="od3-Bw-bhZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TestCell" id="CYe-Yz-p8r">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CYe-Yz-p8r" id="MX3-Ev-0jV">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSd-yp-gnM">
-                                            <rect key="frame" x="43" y="11" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="D9Q-Va-spQ" id="clY-o1-TRb"/>
-                            <outlet property="delegate" destination="D9Q-Va-spQ" id="GF5-Lr-LXf"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fdr-Ch-uyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9oT-oM-VQA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jp5-f4-0iz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="813" y="136"/>
+            <point key="canvasLocation" x="1553" y="136"/>
         </scene>
     </scenes>
 </document>
