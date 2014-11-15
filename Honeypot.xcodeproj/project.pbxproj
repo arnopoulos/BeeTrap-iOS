@@ -11,6 +11,8 @@
 		46D86B981A17AF8F00CCBBAF /* Wallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D86B961A17AF8F00CCBBAF /* Wallet.m */; };
 		46D86B9C1A17AFA800CCBBAF /* button_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86B9A1A17AFA800CCBBAF /* button_background.png */; };
 		46D86B9D1A17AFA800CCBBAF /* cog.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86B9B1A17AFA800CCBBAF /* cog.png */; };
+		46D86B9F1A17FDA900CCBBAF /* button_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46D86B9E1A17FDA900CCBBAF /* button_background.jpg */; };
+		46D86BA11A18053900CCBBAF /* wallet_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86BA01A18053900CCBBAF /* wallet_icon.png */; };
 		49340BD21A16FE3A00718954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49340BD11A16FE3A00718954 /* AppDelegate.swift */; };
 		49340BD51A16FE3A00718954 /* Honeypot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49340BD31A16FE3A00718954 /* Honeypot.xcdatamodeld */; };
 		49340BD71A16FE3A00718954 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49340BD61A16FE3A00718954 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 		46D86B961A17AF8F00CCBBAF /* Wallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wallet.m; sourceTree = "<group>"; };
 		46D86B9A1A17AFA800CCBBAF /* button_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_background.png; sourceTree = "<group>"; };
 		46D86B9B1A17AFA800CCBBAF /* cog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cog.png; sourceTree = "<group>"; };
+		46D86B9E1A17FDA900CCBBAF /* button_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = button_background.jpg; sourceTree = "<group>"; };
+		46D86BA01A18053900CCBBAF /* wallet_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet_icon.png; sourceTree = "<group>"; };
 		49340BCC1A16FE3A00718954 /* Honeypot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honeypot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49340BD01A16FE3A00718954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49340BD11A16FE3A00718954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 		46D86B991A17AFA800CCBBAF /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				46D86BA01A18053900CCBBAF /* wallet_icon.png */,
+				46D86B9E1A17FDA900CCBBAF /* button_background.jpg */,
 				46D86B9A1A17AFA800CCBBAF /* button_background.png */,
 				46D86B9B1A17AFA800CCBBAF /* cog.png */,
 			);
@@ -228,7 +234,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				46D86B9D1A17AFA800CCBBAF /* cog.png in Resources */,
+				46D86B9F1A17FDA900CCBBAF /* button_background.jpg in Resources */,
 				49340BDA1A16FE3A00718954 /* Main.storyboard in Resources */,
+				46D86BA11A18053900CCBBAF /* wallet_icon.png in Resources */,
 				49340BDF1A16FE3A00718954 /* LaunchScreen.xib in Resources */,
 				49340BDC1A16FE3A00718954 /* Images.xcassets in Resources */,
 				46D86B9C1A17AFA800CCBBAF /* button_background.png in Resources */,
