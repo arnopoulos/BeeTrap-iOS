@@ -24,6 +24,11 @@
 
 NSMutableArray * walletArray;
 SKScene* scene;
+bool inWalletPreview = false;
+
+//Wallet Preview nodes
+SKLabelNode* previewer_name;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,6 +37,14 @@ SKScene* scene;
 	self.skView = temp;
     
     scene = [[SKScene alloc]initWithSize:temp.bounds.size];
+    
+    #pragma mark - Init Wallet Previewer
+    previewer_name = [[SKLabelNode alloc]init];
+    previewer_name.alpha = 0;
+    previewer_name.position = CGPointMake(previewer_name.position.x + previewer_name.frame.size.width/2 + scene.frame.size.width/2, previewer_name.position.y - previewer_name.frame.size.height/2 + scene.size.height - 100);
+    
+    [scene addChild:previewer_name];
+    
     
     #pragma mark - Setup wallets
     
@@ -78,7 +91,34 @@ SKScene* scene;
 
 -(void)method
 {
-    [self dismissViewControllerAnimated:TRUE completion:nil];
+    if(!inWalletPreview) [self dismissViewControllerAnimated:TRUE completion:nil]; else [self goBackToList];
+}
+
+-(void)goBackToList
+{
+    inWalletPreview = false;
+    
+    //move all buttons right
+    for(Wallet* wallet in walletArray)
+    {
+        wallet.sprite.alpha = 1;
+    }
+    
+    previewer_name.alpha = 0;
+}
+
+-(void)showWallet:(Wallet*)wallet
+{
+    inWalletPreview = true;
+    
+    //move all buttons left
+    for(Wallet* wallet in walletArray)
+    {
+        wallet.sprite.alpha = 0;
+    }
+    
+    previewer_name.alpha = 1;
+    previewer_name.text = wallet.name;
 }
 
 #pragma mark - Wallet Helper Functions
@@ -89,6 +129,11 @@ SKScene* scene;
     sprite.position = CGPointMake(sprite.position.x,scene.frame.size.height - ButtonHeight*walletArray.count - MenuHeight);
     [scene addChild: sprite];
     
+}
+
+-(void)removeWalletFromList:(int)index
+{
+    [walletArray removeObjectAtIndex:index];
 }
 
 
@@ -106,6 +151,7 @@ SKScene* scene;
            sprite.position.y - sprite.frame.size.height/2 < location.y)
         {
             [wallet touched];
+            [self showWallet:wallet];
         }
     }
 }
