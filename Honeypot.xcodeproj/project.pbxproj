@@ -82,9 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				46D86B931A17AF8F00CCBBAF /* Wallet.h */,
-				46D86B941A17AF8F00CCBBAF /* WalletListViewController.m */,
-				46D86B951A17AF8F00CCBBAF /* WalletListViewController.h */,
 				46D86B961A17AF8F00CCBBAF /* Wallet.m */,
+				46D86B951A17AF8F00CCBBAF /* WalletListViewController.h */,
+				46D86B941A17AF8F00CCBBAF /* WalletListViewController.m */,
 				46D86B991A17AFA800CCBBAF /* Assets */,
 				49340BCE1A16FE3A00718954 /* Honeypot */,
 				49340BE71A16FE3A00718954 /* HoneypotTests */,
