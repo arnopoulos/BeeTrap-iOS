@@ -29,6 +29,27 @@ bool inWalletPreview = false;
 //Wallet Preview nodes
 SKLabelNode* previewer_name;
 
+-(NSArray *) getJSON {
+	NSString * addressString = @"http://www.arnopoulos.io/test";
+	NSURL * url = [[NSURL alloc] initWithString:addressString];
+	NSMutableURLRequest * request = [[NSMutableURLRequest alloc] init];
+	request.URL = url;
+	request.HTTPMethod = @"GET";
+	
+	NSError * error = nil;
+	NSURLResponse * response = nil;
+	NSData * data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+	
+	if (!error) {
+		NSError * jsonError = nil;
+		NSDictionary * dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
+		
+		if (!jsonError) {
+			return dictionary[@"wallet"];
+		}
+	}
+	return nil;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
