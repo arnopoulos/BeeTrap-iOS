@@ -7,8 +7,12 @@
 //
 
 #import "WalletListViewController.h"
+#import <SpriteKit/SpriteKit.h>
 
 @interface WalletListViewController ()
+
+@property (weak,nonatomic) SKView * skView;
+
 
 @end
 
@@ -17,6 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+	SKView * temp = [[SKView alloc] initWithFrame:self.view.bounds];
+	self.skView = temp;
+	[self.view addSubview:self.skView];
 }
 
 - (void)didReceiveMemoryWarning {
