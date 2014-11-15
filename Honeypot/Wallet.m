@@ -10,4 +10,10 @@
 
 @implementation Wallet
 
+
+-(void)touched
+{
+    NSLog(@"%@",self.name);
+}
+
 @end

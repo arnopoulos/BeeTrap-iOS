@@ -6,8 +6,19 @@
 //  Copyright (c) 2014 Andrew Arnopoulos. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#ifndef Wallet_H_
+#define Wallet_H_
 
-@interface Wallet : NSObject
+#import <Foundation/Foundation.h>
+#import <SpriteKit/SpriteKit.h>
+
+@interface Wallet : NSObject 
+
+@property SKSpriteNode *sprite;
+@property NSString *name;
+
+-(void)touched;
 
 @end
+
+#endif
