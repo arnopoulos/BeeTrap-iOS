@@ -28,6 +28,7 @@ bool inWalletPreview = false;
 
 //Wallet Preview nodes
 SKLabelNode* previewer_name;
+SKLabelNode* previewer_hex;
 
 -(NSArray *) getJSON {
 	NSString * addressString = @"http://www.arnopoulos.io/test";
@@ -45,6 +46,7 @@ SKLabelNode* previewer_name;
 		NSDictionary * dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
 		
 		if (!jsonError) {
+            
 			return dictionary[@"wallet"];
 		}
 	}
@@ -58,13 +60,22 @@ SKLabelNode* previewer_name;
 	self.skView = temp;
     
     scene = [[SKScene alloc]initWithSize:temp.bounds.size];
+    scene.backgroundColor = [SKColor whiteColor];
     
     #pragma mark - Init Wallet Previewer
     previewer_name = [[SKLabelNode alloc]init];
+    previewer_name.fontColor = [SKColor blackColor];
     previewer_name.alpha = 0;
     previewer_name.position = CGPointMake(previewer_name.position.x + previewer_name.frame.size.width/2 + scene.frame.size.width/2, previewer_name.position.y - previewer_name.frame.size.height/2 + scene.size.height - 100);
     
     [scene addChild:previewer_name];
+    
+    previewer_hex = [[SKLabelNode alloc]init];
+    previewer_hex.fontColor = [SKColor blackColor];
+    previewer_hex.alpha = 0;
+    previewer_hex.position = CGPointMake(previewer_hex.position.x + previewer_hex.frame.size.width/2 + scene.frame.size.width/2, previewer_hex.position.y - previewer_hex.frame.size.height/2 + scene.size.height - 140);
+    
+    [scene addChild:previewer_hex];
     
     
     #pragma mark - Setup wallets
@@ -75,30 +86,54 @@ SKLabelNode* previewer_name;
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"cog.png"] style:UIBarButtonItemStyleDone target:self action:@selector(editButtonPressed)];
     
-    //get
-    for(int i = 0; i < 10; i++)
+    //get wallets
+    
+    NSArray* wallets = [self getJSON];
+    
+    if(wallets)
     {
-        Wallet* temp = [[Wallet alloc]init];
-        
-        temp.sprite = [SKSpriteNode spriteNodeWithImageNamed:@"button_background.png"];
-        temp.sprite.xScale = scene.size.width/temp.sprite.frame.size.width;
-        temp.sprite.yScale = ButtonHeight/temp.sprite.frame.size.height;
-        temp.sprite.position = CGPointMake(temp.sprite.frame.size.width/2,
-                                           temp.sprite.frame.size.height/2);
-        temp.name = [NSString stringWithFormat:@"My Wallet %i",i + 1];
-        SKLabelNode* text = [[SKLabelNode alloc] init];
-        //child name
-        [text setName:@"text"];
-        //actual name
-        text.text = temp.name;
-        text.fontName = @"System-Bold";
-        [temp.sprite addChild:text];
-        SKLabelNode* child = (SKLabelNode*)[temp.sprite childNodeWithName:@"text"];
-        child.position = CGPointMake(child.position.x - 64, child.position.y  - 10);
-        
-        [self addWalletToList:temp];
-        
+        for(int i = 0; i < wallets.count; i++)
+        {
+            Wallet* temp = [[Wallet alloc] createWalletWithID:wallets[i][@"id"]
+                                                  andUpdateAt:wallets[i][@"update_at"]
+                                                       andHex:wallets[i][@"hex"]
+                                                      andName:wallets[i][@"name"]
+                                                  andCreateAt:wallets[i][@"created_at"]
+                                                  andWalletID:wallets[i][@"wallet_id"]
+                                               andCompromised:wallets[i][@"compromised"]];
+            
+            temp.sprite.xScale = scene.size.width/temp.sprite.frame.size.width;
+            temp.sprite.yScale = ButtonHeight/temp.sprite.frame.size.height;
+            temp.sprite.position = CGPointMake(temp.sprite.frame.size.width/2,
+                                               temp.sprite.frame.size.height/2);
+            
+            [self addWalletToList:temp];
+            
+        }
     }
+//    for(int i = 0; i < 10; i++)
+//    {
+//        Wallet* temp = [[Wallet alloc]init];
+//        
+//        temp.sprite = [SKSpriteNode spriteNodeWithImageNamed:@"button_background.png"];
+//        temp.sprite.xScale = scene.size.width/temp.sprite.frame.size.width;
+//        temp.sprite.yScale = ButtonHeight/temp.sprite.frame.size.height;
+//        temp.sprite.position = CGPointMake(temp.sprite.frame.size.width/2,
+//                                           temp.sprite.frame.size.height/2);
+//        temp.name = [NSString stringWithFormat:@"My Wallet %i",i + 1];
+//        SKLabelNode* text = [[SKLabelNode alloc] init];
+//        //child name
+//        [text setName:@"text"];
+//        //actual name
+//        text.text = temp.name;
+//        text.fontName = @"System-Bold";
+//        [temp.sprite addChild:text];
+//        SKLabelNode* child = (SKLabelNode*)[temp.sprite childNodeWithName:@"text"];
+//        child.position = CGPointMake(child.position.x - 64, child.position.y  - 10);
+//        
+//        [self addWalletToList:temp];
+//        
+//    }
     
     [temp presentScene:scene];
 	
@@ -126,6 +161,7 @@ SKLabelNode* previewer_name;
     }
     
     previewer_name.alpha = 0;
+    previewer_hex.alpha =0;
 }
 
 -(void)showWallet:(Wallet*)wallet
@@ -140,6 +176,10 @@ SKLabelNode* previewer_name;
     
     previewer_name.alpha = 1;
     previewer_name.text = wallet.name;
+    
+    previewer_hex.alpha = 1;
+    previewer_hex.text = wallet.hex;
+    previewer_hex.scale = (scene.size.width - 40)/previewer_hex.frame.size.width;
 }
 
 #pragma mark - Wallet Helper Functions

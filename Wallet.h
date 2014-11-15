@@ -15,9 +15,17 @@
 @interface Wallet : NSObject 
 
 @property SKSpriteNode *sprite;
+
 @property NSString *name;
+@property NSString* ID;
+@property NSString* update_at;
+@property NSString* hex;
+@property NSString* created_at;
+@property NSString* wallet_id;
+@property bool compromised;
 
 -(void)touched;
+-(Wallet*)createWalletWithID:(NSString*)i andUpdateAt:(NSString*)u andHex:(NSString*)h andName:(NSString*)n andCreateAt:(NSString*)c andWalletID:(NSString*)w andCompromised:(NSNumber*)comp;
 
 @end
 
