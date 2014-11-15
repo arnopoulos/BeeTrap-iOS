@@ -18,6 +18,7 @@
 		49340BDC1A16FE3A00718954 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49340BDB1A16FE3A00718954 /* Images.xcassets */; };
 		49340BDF1A16FE3A00718954 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49340BDD1A16FE3A00718954 /* LaunchScreen.xib */; };
 		49340BEB1A16FE3A00718954 /* HoneypotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49340BEA1A16FE3A00718954 /* HoneypotTests.swift */; };
+		49F94F971A1806CB007681BE /* NotificationPoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F94F961A1806CB007681BE /* NotificationPoller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		49340BE41A16FE3A00718954 /* HoneypotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoneypotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49340BE91A16FE3A00718954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49340BEA1A16FE3A00718954 /* HoneypotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneypotTests.swift; sourceTree = "<group>"; };
+		49F94F951A1806CB007681BE /* NotificationPoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationPoller.h; sourceTree = "<group>"; };
+		49F94F961A1806CB007681BE /* NotificationPoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationPoller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 		49340BCE1A16FE3A00718954 /* Honeypot */ = {
 			isa = PBXGroup;
 			children = (
+				49F94F951A1806CB007681BE /* NotificationPoller.h */,
+				49F94F961A1806CB007681BE /* NotificationPoller.m */,
 				49340BD61A16FE3A00718954 /* ViewController.swift */,
 				49340BD81A16FE3A00718954 /* Main.storyboard */,
 				49340BDB1A16FE3A00718954 /* Images.xcassets */,
@@ -246,6 +251,7 @@
 			files = (
 				46D86B981A17AF8F00CCBBAF /* Wallet.m in Sources */,
 				49340BD71A16FE3A00718954 /* ViewController.swift in Sources */,
+				49F94F971A1806CB007681BE /* NotificationPoller.m in Sources */,
 				46D86B971A17AF8F00CCBBAF /* WalletListViewController.m in Sources */,
 				49340BD21A16FE3A00718954 /* AppDelegate.swift in Sources */,
 				49340BD51A16FE3A00718954 /* Honeypot.xcdatamodeld in Sources */,
