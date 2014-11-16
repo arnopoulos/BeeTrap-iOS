@@ -3,43 +3,43 @@
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "honey-pot-29.png",
+      "filename" : "honey-pot-29x2.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "honey-pot-58.png",
+      "filename" : "honey-pot-29x3.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "honey-pot-40.png",
+      "filename" : "honey-pot-40x2.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "honey-pot-80-1.png",
+      "filename" : "honey-pot-40x3.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "honey-pot-76-1.png",
+      "filename" : "honey-pot-60x2.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "honey-pot-152-1.png",
+      "filename" : "honey-pot-60x3.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "honey-pot-29-1.png",
+      "filename" : "honey-pot-29x1.png",
       "scale" : "1x"
     },
     {
@@ -51,25 +51,25 @@
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "honey-pot-40-1.png",
+      "filename" : "honey-pot-40x1.png",
       "scale" : "1x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "honey-pot-80.png",
+      "filename" : "honey-pot-40x2-1.png",
       "scale" : "2x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "honey-pot-76.png",
+      "filename" : "honey-pot-76x1.png",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "honey-pot-152.png",
+      "filename" : "honey-pot-76x2.png",
       "scale" : "2x"
     }
   ],
