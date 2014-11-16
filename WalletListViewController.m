@@ -206,6 +206,8 @@ double touchStarty;
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint location = [touch locationInView:self.view];
     
+    scrolling = false;
+    
     touchStarty = location.y;
     for(Wallet* wallet in walletArray)
     {
@@ -224,7 +226,20 @@ double touchStarty;
     for(Wallet* wallet in walletArray)
     {
         SKSpriteNode* sprite = wallet.sprite;
-        sprite.position = CGPointMake(sprite.position.x, wallet.starty - deltay);
+        //sprite.position = CGPointMake(sprite.position.x, wallet.starty - deltay);
+        if((((Wallet*)[walletArray objectAtIndex:0]).sprite.position.y
+            +
+            ((Wallet*)[walletArray objectAtIndex:0]).sprite.size.height/2) > scene.frame.size.height - MenuHeight && deltay < 0)
+        {
+            //sprite.position = CGPointMake(sprite.position.x, wallet.starty - deltay);
+        }
+        
+        if((((Wallet*)[walletArray objectAtIndex:walletArray.count -1]).sprite.position.y
+            -
+            ((Wallet*)[walletArray objectAtIndex:walletArray.count -1]).sprite.size.height/2) < 0 && deltay > 0)
+        {
+            sprite.position = CGPointMake(sprite.position.x, wallet.starty - deltay);
+        }
     }
 }
 
@@ -242,7 +257,6 @@ double touchStarty;
            &&
            sprite.position.y - sprite.frame.size.height/2 < location.y)
         {
-            [wallet touched];
             [self showWallet:wallet];
         }
     }

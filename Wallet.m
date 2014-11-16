@@ -13,7 +13,7 @@
 
 -(void)touched
 {
-    NSLog(@"%@",self.name);
+    //NSLog(@"%@",self.name);
 }
 
 -(Wallet*)createWalletWithID:(NSString*)i andUpdateAt:(NSString*)u andHex:(NSString*)h andName:(NSString*)n andCreateAt:(NSString*)c andWalletID:(NSString*)w andCompromised:(NSNumber*)comp
@@ -37,7 +37,7 @@
     
     if(self.compromised) self.sprite.color = [SKColor redColor]; else self.sprite.color = [SKColor greenColor];
     
-    self.sprite.colorBlendFactor = .4;
+    self.sprite.colorBlendFactor = .5;
     
     SKLabelNode* text = [[SKLabelNode alloc] init];
     //child name
