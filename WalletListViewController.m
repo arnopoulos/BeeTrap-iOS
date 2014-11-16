@@ -25,6 +25,7 @@
 NSMutableArray * walletArray;
 SKScene* scene;
 bool inWalletPreview = false;
+bool scrolling = false;
 
 //Wallet Preview nodes
 SKLabelNode* previewer_name;
@@ -199,10 +200,55 @@ SKLabelNode* previewer_hex;
 
 
 #pragma mark - Touch Handling
+double touchStarty;
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    UITouch *touch = [[event allTouches] anyObject];
+    CGPoint location = [touch locationInView:self.view];
+    
+    scrolling = false;
+    
+    touchStarty = location.y;
+    for(Wallet* wallet in walletArray)
+    {
+        wallet.starty = wallet.sprite.position.y;
+    }
+}
+
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    UITouch *touch = [[event allTouches] anyObject];
+    CGPoint location = [touch locationInView:self.view];
+    
+    scrolling = true;
+    
+    double deltay = location.y - touchStarty;
+    
+    for(Wallet* wallet in walletArray)
+    {
+        SKSpriteNode* sprite = wallet.sprite;
+        //sprite.position = CGPointMake(sprite.position.x, wallet.starty - deltay);
+        if((((Wallet*)[walletArray objectAtIndex:0]).sprite.position.y
+            +
+            ((Wallet*)[walletArray objectAtIndex:0]).sprite.size.height/2) > scene.frame.size.height - MenuHeight && deltay < 0)
+        {
+            //sprite.position = CGPointMake(sprite.position.x, wallet.starty - deltay);
+        }
+        
+        if((((Wallet*)[walletArray objectAtIndex:walletArray.count -1]).sprite.position.y
+            -
+            ((Wallet*)[walletArray objectAtIndex:walletArray.count -1]).sprite.size.height/2) < 0 && deltay > 0)
+        {
+            sprite.position = CGPointMake(sprite.position.x, wallet.starty - deltay);
+        }
+    }
+}
+
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint location = [touch locationInView:self.view];
     location.y = self.view.bounds.size.height - location.y;
+    
+    if(scrolling)return;
     
     for(Wallet* wallet in walletArray)
     {
@@ -211,10 +257,11 @@ SKLabelNode* previewer_hex;
            &&
            sprite.position.y - sprite.frame.size.height/2 < location.y)
         {
-            [wallet touched];
             [self showWallet:wallet];
         }
     }
+    
+    scrolling = false;
 }
 
 - (void)didReceiveMemoryWarning {
