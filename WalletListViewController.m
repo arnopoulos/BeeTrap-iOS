@@ -225,7 +225,7 @@ double touchStarty;
     for(Wallet* wallet in walletArray)
     {
         SKSpriteNode* sprite = wallet.sprite;
-        //sprite.position = CGPointMake(sprite.position.x, wallet.starty - deltay);
+        sprite.position = CGPointMake(sprite.position.x, wallet.starty - deltay);
         if((((Wallet*)[walletArray objectAtIndex:0]).sprite.position.y
             +
             ((Wallet*)[walletArray objectAtIndex:0]).sprite.size.height/2) > scene.frame.size.height - MenuHeight && deltay < 0)
@@ -237,7 +237,7 @@ double touchStarty;
             -
             ((Wallet*)[walletArray objectAtIndex:walletArray.count -1]).sprite.size.height/2) < 0 && deltay > 0)
         {
-            sprite.position = CGPointMake(sprite.position.x, wallet.starty - deltay);
+            //sprite.position = CGPointMake(sprite.position.x, wallet.starty - deltay);
         }
     }
 }
