@@ -28,6 +28,16 @@
 -(void)touched;
 -(Wallet*)createWalletWithID:(NSString*)i andUpdateAt:(NSString*)u andHex:(NSString*)h andName:(NSString*)n andCreateAt:(NSString*)c andWalletID:(NSString*)w andCompromised:(NSNumber*)comp;
 
+-(id) initWithDictionary:(NSDictionary *) dictionary;
+
+-(NSDate *) getDate;
+
+-(NSNumber *)getID;
+
++(NSDictionary *) getWallets;
+
++(NSArray *) getWalletsArray;
+
 @end
 
 #endif

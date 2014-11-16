@@ -13,6 +13,7 @@
 		46D86B9D1A17AFA800CCBBAF /* cog.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86B9B1A17AFA800CCBBAF /* cog.png */; };
 		46D86B9F1A17FDA900CCBBAF /* button_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46D86B9E1A17FDA900CCBBAF /* button_background.jpg */; };
 		46D86BA11A18053900CCBBAF /* wallet_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86BA01A18053900CCBBAF /* wallet_icon.png */; };
+		492898461A1819D200547BC9 /* NotificationPoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 492898451A1819D200547BC9 /* NotificationPoller.m */; };
 		49340BD21A16FE3A00718954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49340BD11A16FE3A00718954 /* AppDelegate.swift */; };
 		49340BD51A16FE3A00718954 /* Honeypot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49340BD31A16FE3A00718954 /* Honeypot.xcdatamodeld */; };
 		49340BD71A16FE3A00718954 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49340BD61A16FE3A00718954 /* ViewController.swift */; };
@@ -42,6 +43,8 @@
 		46D86B9B1A17AFA800CCBBAF /* cog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cog.png; sourceTree = "<group>"; };
 		46D86B9E1A17FDA900CCBBAF /* button_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = button_background.jpg; sourceTree = "<group>"; };
 		46D86BA01A18053900CCBBAF /* wallet_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet_icon.png; sourceTree = "<group>"; };
+		492898441A1819D200547BC9 /* NotificationPoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationPoller.h; sourceTree = "<group>"; };
+		492898451A1819D200547BC9 /* NotificationPoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationPoller.m; sourceTree = "<group>"; };
 		49340BCC1A16FE3A00718954 /* Honeypot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honeypot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49340BD01A16FE3A00718954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49340BD11A16FE3A00718954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 				46D86B961A17AF8F00CCBBAF /* Wallet.m */,
 				46D86B951A17AF8F00CCBBAF /* WalletListViewController.h */,
 				46D86B941A17AF8F00CCBBAF /* WalletListViewController.m */,
+				492898441A1819D200547BC9 /* NotificationPoller.h */,
+				492898451A1819D200547BC9 /* NotificationPoller.m */,
 				46D86B991A17AFA800CCBBAF /* Assets */,
 				49340BCE1A16FE3A00718954 /* Honeypot */,
 				49340BE71A16FE3A00718954 /* HoneypotTests */,
@@ -196,10 +201,11 @@
 				TargetAttributes = {
 					49340BCB1A16FE3A00718954 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = X2XRMA69TU;
+						DevelopmentTeam = 64478PBG52;
 					};
 					49340BE31A16FE3A00718954 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 64478PBG52;
 						TestTargetID = 49340BCB1A16FE3A00718954;
 					};
 				};
@@ -254,6 +260,7 @@
 			files = (
 				46D86B981A17AF8F00CCBBAF /* Wallet.m in Sources */,
 				49340BD71A16FE3A00718954 /* ViewController.swift in Sources */,
+				492898461A1819D200547BC9 /* NotificationPoller.m in Sources */,
 				46D86B971A17AF8F00CCBBAF /* WalletListViewController.m in Sources */,
 				49340BD21A16FE3A00718954 /* AppDelegate.swift in Sources */,
 				49340BD51A16FE3A00718954 /* Honeypot.xcdatamodeld in Sources */,

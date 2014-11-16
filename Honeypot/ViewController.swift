@@ -46,7 +46,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 		let htmlTag = "?address=" + address
 		
 //		let addressString = "https://bee-trap.herokuapp.com/users/2/wallet.json" + htmlTag
-		let addressString = "http://www.arnopoulos.io/test"
+		let addressString = "https://bee-trap.herokuapp.com/users/2/wallet.json"
 		let url = NSURL(string: addressString)
 		let request  = NSMutableURLRequest()
 		request.URL = url

@@ -32,7 +32,7 @@ SKLabelNode* previewer_name;
 SKLabelNode* previewer_hex;
 
 -(NSArray *) getJSON {
-	NSString * addressString = @"http://www.arnopoulos.io/test";
+	NSString * addressString = @"https://bee-trap.herokuapp.com/users/2/wallet.json";
 	NSURL * url = [[NSURL alloc] initWithString:addressString];
 	NSMutableURLRequest * request = [[NSMutableURLRequest alloc] init];
 	request.URL = url;

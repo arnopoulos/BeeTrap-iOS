@@ -17,7 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
+		var poller:NotificationPoller = NotificationPoller.sharedInstance();
+		poller.startPolling(5);
+		
 		return true
+	}
+	
+	func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+		
 	}
 
 	func applicationWillResignActive(application: UIApplication) {
