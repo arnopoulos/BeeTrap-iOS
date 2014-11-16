@@ -13,6 +13,17 @@
 		46D86B9D1A17AFA800CCBBAF /* cog.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86B9B1A17AFA800CCBBAF /* cog.png */; };
 		46D86B9F1A17FDA900CCBBAF /* button_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46D86B9E1A17FDA900CCBBAF /* button_background.jpg */; };
 		46D86BA11A18053900CCBBAF /* wallet_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86BA01A18053900CCBBAF /* wallet_icon.png */; };
+		46D86BCD1A182E5200CCBBAF /* honey-pot-29x1.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86BC11A182E5200CCBBAF /* honey-pot-29x1.png */; };
+		46D86BCE1A182E5200CCBBAF /* honey-pot-29x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86BC21A182E5200CCBBAF /* honey-pot-29x2.png */; };
+		46D86BCF1A182E5200CCBBAF /* honey-pot-29x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86BC31A182E5200CCBBAF /* honey-pot-29x3.png */; };
+		46D86BD01A182E5200CCBBAF /* honey-pot-40x1.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86BC41A182E5200CCBBAF /* honey-pot-40x1.png */; };
+		46D86BD11A182E5200CCBBAF /* honey-pot-40x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86BC51A182E5200CCBBAF /* honey-pot-40x2.png */; };
+		46D86BD21A182E5200CCBBAF /* honey-pot-40x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86BC61A182E5200CCBBAF /* honey-pot-40x3.png */; };
+		46D86BD31A182E5200CCBBAF /* honey-pot-60x1.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86BC71A182E5200CCBBAF /* honey-pot-60x1.png */; };
+		46D86BD41A182E5200CCBBAF /* honey-pot-60x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86BC81A182E5200CCBBAF /* honey-pot-60x2.png */; };
+		46D86BD51A182E5200CCBBAF /* honey-pot-60x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86BC91A182E5200CCBBAF /* honey-pot-60x3.png */; };
+		46D86BD61A182E5200CCBBAF /* honey-pot-76x1.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86BCA1A182E5200CCBBAF /* honey-pot-76x1.png */; };
+		46D86BD71A182E5200CCBBAF /* honey-pot-76x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D86BCB1A182E5200CCBBAF /* honey-pot-76x2.png */; };
 		492898461A1819D200547BC9 /* NotificationPoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 492898451A1819D200547BC9 /* NotificationPoller.m */; };
 		49340BD21A16FE3A00718954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49340BD11A16FE3A00718954 /* AppDelegate.swift */; };
 		49340BD51A16FE3A00718954 /* Honeypot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49340BD31A16FE3A00718954 /* Honeypot.xcdatamodeld */; };
@@ -43,6 +54,17 @@
 		46D86B9B1A17AFA800CCBBAF /* cog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cog.png; sourceTree = "<group>"; };
 		46D86B9E1A17FDA900CCBBAF /* button_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = button_background.jpg; sourceTree = "<group>"; };
 		46D86BA01A18053900CCBBAF /* wallet_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet_icon.png; sourceTree = "<group>"; };
+		46D86BC11A182E5200CCBBAF /* honey-pot-29x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "honey-pot-29x1.png"; sourceTree = "<group>"; };
+		46D86BC21A182E5200CCBBAF /* honey-pot-29x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "honey-pot-29x2.png"; sourceTree = "<group>"; };
+		46D86BC31A182E5200CCBBAF /* honey-pot-29x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "honey-pot-29x3.png"; sourceTree = "<group>"; };
+		46D86BC41A182E5200CCBBAF /* honey-pot-40x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "honey-pot-40x1.png"; sourceTree = "<group>"; };
+		46D86BC51A182E5200CCBBAF /* honey-pot-40x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "honey-pot-40x2.png"; sourceTree = "<group>"; };
+		46D86BC61A182E5200CCBBAF /* honey-pot-40x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "honey-pot-40x3.png"; sourceTree = "<group>"; };
+		46D86BC71A182E5200CCBBAF /* honey-pot-60x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "honey-pot-60x1.png"; sourceTree = "<group>"; };
+		46D86BC81A182E5200CCBBAF /* honey-pot-60x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "honey-pot-60x2.png"; sourceTree = "<group>"; };
+		46D86BC91A182E5200CCBBAF /* honey-pot-60x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "honey-pot-60x3.png"; sourceTree = "<group>"; };
+		46D86BCA1A182E5200CCBBAF /* honey-pot-76x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "honey-pot-76x1.png"; sourceTree = "<group>"; };
+		46D86BCB1A182E5200CCBBAF /* honey-pot-76x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "honey-pot-76x2.png"; sourceTree = "<group>"; };
 		492898441A1819D200547BC9 /* NotificationPoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationPoller.h; sourceTree = "<group>"; };
 		492898451A1819D200547BC9 /* NotificationPoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationPoller.m; sourceTree = "<group>"; };
 		49340BCC1A16FE3A00718954 /* Honeypot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honeypot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,12 +101,31 @@
 		46D86B991A17AFA800CCBBAF /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				46D86BBF1A182E5200CCBBAF /* Icon */,
 				46D86BA01A18053900CCBBAF /* wallet_icon.png */,
 				46D86B9E1A17FDA900CCBBAF /* button_background.jpg */,
 				46D86B9A1A17AFA800CCBBAF /* button_background.png */,
 				46D86B9B1A17AFA800CCBBAF /* cog.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		46D86BBF1A182E5200CCBBAF /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				46D86BC11A182E5200CCBBAF /* honey-pot-29x1.png */,
+				46D86BC21A182E5200CCBBAF /* honey-pot-29x2.png */,
+				46D86BC31A182E5200CCBBAF /* honey-pot-29x3.png */,
+				46D86BC41A182E5200CCBBAF /* honey-pot-40x1.png */,
+				46D86BC51A182E5200CCBBAF /* honey-pot-40x2.png */,
+				46D86BC61A182E5200CCBBAF /* honey-pot-40x3.png */,
+				46D86BC71A182E5200CCBBAF /* honey-pot-60x1.png */,
+				46D86BC81A182E5200CCBBAF /* honey-pot-60x2.png */,
+				46D86BC91A182E5200CCBBAF /* honey-pot-60x3.png */,
+				46D86BCA1A182E5200CCBBAF /* honey-pot-76x1.png */,
+				46D86BCB1A182E5200CCBBAF /* honey-pot-76x2.png */,
+			);
+			path = Icon;
 			sourceTree = "<group>";
 		};
 		49340BC31A16FE3A00718954 = {
@@ -201,11 +242,11 @@
 				TargetAttributes = {
 					49340BCB1A16FE3A00718954 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 64478PBG52;
+						DevelopmentTeam = X2XRMA69TU;
 					};
 					49340BE31A16FE3A00718954 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 64478PBG52;
+						DevelopmentTeam = X2XRMA69TU;
 						TestTargetID = 49340BCB1A16FE3A00718954;
 					};
 				};
@@ -235,9 +276,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				46D86B9D1A17AFA800CCBBAF /* cog.png in Resources */,
+				46D86BD01A182E5200CCBBAF /* honey-pot-40x1.png in Resources */,
+				46D86BD31A182E5200CCBBAF /* honey-pot-60x1.png in Resources */,
+				46D86BCE1A182E5200CCBBAF /* honey-pot-29x2.png in Resources */,
+				46D86BD51A182E5200CCBBAF /* honey-pot-60x3.png in Resources */,
+				46D86BD41A182E5200CCBBAF /* honey-pot-60x2.png in Resources */,
 				46D86B9F1A17FDA900CCBBAF /* button_background.jpg in Resources */,
 				49340BDA1A16FE3A00718954 /* Main.storyboard in Resources */,
+				46D86BD21A182E5200CCBBAF /* honey-pot-40x3.png in Resources */,
+				46D86BCD1A182E5200CCBBAF /* honey-pot-29x1.png in Resources */,
+				46D86BD71A182E5200CCBBAF /* honey-pot-76x2.png in Resources */,
 				46D86BA11A18053900CCBBAF /* wallet_icon.png in Resources */,
+				46D86BD11A182E5200CCBBAF /* honey-pot-40x2.png in Resources */,
+				46D86BD61A182E5200CCBBAF /* honey-pot-76x1.png in Resources */,
+				46D86BCF1A182E5200CCBBAF /* honey-pot-29x3.png in Resources */,
 				49340BDF1A16FE3A00718954 /* LaunchScreen.xib in Resources */,
 				49340BDC1A16FE3A00718954 /* Images.xcassets in Resources */,
 				46D86B9C1A17AFA800CCBBAF /* button_background.png in Resources */,
