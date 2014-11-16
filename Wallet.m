@@ -8,6 +8,12 @@
 
 #import "Wallet.h"
 
+@interface Wallet ()
+
++(NSArray *)getJSON;
+
+@end
+
 @implementation Wallet
 
 
@@ -52,6 +58,71 @@
     child.position = CGPointMake(wallet_image.position.x + wallet_image.size.width/2 + child.frame.size.width/2 + 10, child.position.y  - 10);
     
     return self;
+}
+
+-(id)initWithDictionary:(NSDictionary *)dictionary {
+	if (self = [self init]) {
+		self.ID = dictionary[@"id"];
+		self.update_at = dictionary[@"update_at"];
+		self.hex = dictionary[@"hex"];
+		self.name = dictionary[@"name"];
+		self.created_at = dictionary[@"created_at"];
+		self.wallet_id = dictionary[@"wallet_id"];
+		self.compromised = [dictionary[@"compromised"] boolValue];
+	}
+	return self;
+}
+
+-(NSDate *) getDate {
+	NSDateFormatter * formater = [[NSDateFormatter alloc] init];
+	[formater setDateFormat:@"yyyy-MM-ddTHH:mm:ssZ"];
+	return [formater dateFromString:self.update_at];
+}
+
+-(NSNumber *)getID {
+	return (NSNumber *)self.ID;
+}
+
++(NSArray *) getJSON {
+	NSString * addressString = @"http://www.arnopoulos.io/test";
+	NSURL * url = [[NSURL alloc] initWithString:addressString];
+	NSMutableURLRequest * request = [[NSMutableURLRequest alloc] init];
+	request.URL = url;
+	request.HTTPMethod = @"GET";
+	
+	NSError * error = nil;
+	NSURLResponse * response = nil;
+	NSData * data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+	
+	if (!error) {
+		NSError * jsonError = nil;
+		NSDictionary * dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
+		
+		if (!jsonError) {
+			
+			return dictionary[@"wallet"];
+		}
+	}
+	return nil;
+}
+
++(NSDictionary *) getWallets {
+	NSMutableDictionary * dictionary = [[NSMutableDictionary alloc] init];
+	NSArray * wallets = [Wallet getJSON];
+	for (NSDictionary * w in wallets) {
+		dictionary[w[@"id"]] = [[Wallet alloc] initWithDictionary:w];
+	}
+	
+	return dictionary;
+}
+
++(NSArray *) getWalletsArray {
+	NSMutableArray * wArray = [[NSMutableArray alloc] init];
+	NSArray * wallets = [Wallet getJSON];
+	for (NSDictionary * w in wallets) {
+		[wArray addObject:[[Wallet alloc] initWithDictionary:w]];
+	}
+	return wArray;
 }
 
 @end
