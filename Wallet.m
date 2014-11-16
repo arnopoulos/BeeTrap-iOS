@@ -63,7 +63,7 @@
 -(id)initWithDictionary:(NSDictionary *)dictionary {
 	if (self = [self init]) {
 		self.ID = dictionary[@"id"];
-		self.update_at = dictionary[@"update_at"];
+		self.update_at = dictionary[@"updated_at"];
 		self.hex = dictionary[@"hex"];
 		self.name = dictionary[@"name"];
 		self.created_at = dictionary[@"created_at"];
@@ -84,7 +84,7 @@
 }
 
 +(NSArray *) getJSON {
-	NSString * addressString = @"https://bee-trap.herokuapp.com/users/2/wallet.json";
+	NSString * addressString = @"http://172.16.1.26:3000/users/2/wallet.json";
 	NSURL * url = [[NSURL alloc] initWithString:addressString];
 	NSMutableURLRequest * request = [[NSMutableURLRequest alloc] init];
 	request.URL = url;

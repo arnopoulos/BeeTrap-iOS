@@ -32,7 +32,7 @@ SKLabelNode* previewer_name;
 SKLabelNode* previewer_hex;
 
 -(NSArray *) getJSON {
-	NSString * addressString = @"https://bee-trap.herokuapp.com/users/2/wallet.json";
+	NSString * addressString = @"http://172.16.1.26:3000/users/2/wallet.json";
 	NSURL * url = [[NSURL alloc] initWithString:addressString];
 	NSMutableURLRequest * request = [[NSMutableURLRequest alloc] init];
 	request.URL = url;
@@ -47,7 +47,6 @@ SKLabelNode* previewer_hex;
 		NSDictionary * dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
 		
 		if (!jsonError) {
-            
 			return dictionary[@"wallet"];
 		}
 	}
@@ -96,7 +95,7 @@ SKLabelNode* previewer_hex;
         for(int i = 0; i < wallets.count; i++)
         {
             Wallet* temp = [[Wallet alloc] createWalletWithID:wallets[i][@"id"]
-                                                  andUpdateAt:wallets[i][@"update_at"]
+                                                  andUpdateAt:wallets[i][@"updated_at"]
                                                        andHex:wallets[i][@"hex"]
                                                       andName:wallets[i][@"name"]
                                                   andCreateAt:wallets[i][@"created_at"]
